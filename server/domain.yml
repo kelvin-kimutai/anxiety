@@ -1,0 +1,83 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - social_anxiety
+  - panic_attack
+  - general_anxiety
+  - claustrophobia
+  - aquaphobia
+  - hemophobia
+  - acrophobia
+  - trypanophobia
+  - bot_challenge
+  - feedback
+  - deny
+  - social_phobia
+  - mood_great
+  
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+    - text: "Hey! How is your day going?"
+
+  utter_happy:
+    - text: "Hey! How are you?"
+
+  utter_social_anxiety:
+    - text: "Perform this exercise with me, it is known as box breathing and should help you calm down. 
+    Inhale for a count of four.Hold your breath for a count of four.Exhale for a count of four.
+    Pause and hold your breath for a count of four.Repeat the cycle. "
+
+  utter_panic_attack:
+    - text: "Practice deep breathing techniques such as the 4-7-8 breathing. I will take you through it. 
+    Inhale quietly till a mental count of four, hold breath to a count of seven then completely exhale through the mouth."
+
+  utter_aquaphobia:
+    - text: "Aquaphobia can be overcomed using coping mechanisms such as Vivo Exposure, which involves starting off slow by looking at pictures of people in water bodies.
+    You can then proceed to watch them at a distance will help you relax seeing them successfully facing your fear.
+    Then eventually, get into the water periodically."
+  
+  utter_general_anxiety:
+    - text: "Breathing exercises such as the box breathing or pace breathing could help you calm down. "
+
+
+  utter_hemophobia:
+    - text: "Coping strategies for Hemophobia may be to completely avoid the scene or person bleeding. 
+    If you are the only person there, put pressure on the wound by tightly closing exit wound. 
+    Paced breathing exercises, whereby you inhale and exhale  will help you to calm down and focus on helping the person bleeding."
+
+  utter_claustrophobia:
+    - text: "If you find yourself in confined spaces, practice some of the breathing exercises, such as the 4-7-8 or box breathing.
+    It may also be important to notify those around you of your claustrophobia to help keep you calm."
+
+  utter_social_phobia:
+    - text: "If you find yourself in confined spaces, practice some of the breathing exercises, such as the 4-7-8 or box breathing.
+    It may also be important to notify those around you of your claustrophobia to help keep you calm."
+
+  utter_acrophobia:
+    - text: "Fear of needles is quite common than you might think.Visualization breathing could help you in this scenario whereby you try visualize a peaceful scene.
+    Inhale and try to visualize positive energy entering your body and exhale imagining the stress leaving your body.
+    Also, you know what they say, prevention is better than cure. Eat healthy and exercise regularly to avoid illnesses whose treatment incorporates needles."
+
+  utter_goodbye:
+  - text: "Goodbye!"
+
+  utter_ask_feedback: 
+    - text: "Would you like to give us a feedback?"
+
+  utter_thankyou:
+    - text: "Thankyou for the feedback. We value you."
+  
+  utter_no_problem: 
+    - text: "No problem, we welcome your feedback anytime!"
+
+  utter_iamabot:
+    - text: "My name is HALAP, here to help you Handle Anxiety Like a Pro."
+
+
+session_config:
+  session_expiration_time: 240
+  carry_over_slots_to_new_session: true

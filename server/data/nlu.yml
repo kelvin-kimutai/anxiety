@@ -1,0 +1,97 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - morning
+      - hey there
+      - let's go
+
+  - intent: goodbye
+    examples: |
+      - see you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: social_anxiety
+    examples: |
+      - I'm in public and feeling so nervous
+      - I'm about to present infront of a crowd
+      - People are staring
+      - I am so anxious about my presentation
+
+  - intent: panic_attack
+    examples: |
+      - I think I'm having a panic attack
+      - I am hyperventilating
+      - My hands are even shaking
+      - I am in full panic mode
+      - I'm really panicking
+
+  - intent: general_anxiety
+    examples: |
+      - I am so restless
+      - I'm really sweating
+      - I can't seem to calm down
+      - feeling like a king
+      - Help me calm down
+
+  - intent: claustrophobia
+    examples: |
+      - I don't like being in enclosed spaces
+      - I am claustrophobic
+      - I am afraid of small spaces
+      - Cannot seem to get over being in an enclosed space
+      - I don't do well in small spaces
+      - Enclosed spaces are a big no
+
+  - intent: hemophobia
+    examples: |
+      - I don't like the seeing blood
+      - The sight of blood scares me
+      - I get so anxious when I see blood, even my own
+      - Blood makes me formidable
+      - When I see blood, I feel light headed
+
+  - intent: aquaphobia
+    examples: |
+      - I don't like being in water
+      - Water bodies scare me
+      - I keep my distance from water
+      - Water and I don't get along
+      - I am afraid of drowning
+      - I can't swim because of my fear of water
+
+  - intent: trypanophobia
+    examples: |
+      - I am afraid of needles
+      - Needles scare me
+      - I don't like needles
+      - I cannot seem to get over my fear of injections
+      - I don't do well with needles
+
+  - intent: deny
+    examples: |
+      - No
+      - Not interested
+      - Not today
+      - Nope
+      -Maybe another time
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?

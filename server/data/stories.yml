@@ -1,0 +1,65 @@
+stories:
+  - story: happy_path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  # Story to Handle GAD Inquiry
+  - story: General_anxiety_inquiry
+    steps:
+      - intent: general_anxiety
+      - action: utter_general_anxiety
+
+  # Story to Handle Panic Attack Inquiry
+  - story: Panic_attack_inquiry
+    steps:
+      - intent: panic_attack
+      - action: utter_panic_attack
+
+  # Story to Handle Aquaphobia Inquiry
+  - story: Aquaphobia_inquiry
+    steps:
+      - intent: aquaphobia
+      - action: utter_aquaphobia
+
+  # Story to Handle Hemophobia Inquiry
+  - story: Hemophobia_inquiry
+    steps:
+      - intent: hemophobia
+      - action: utter_hemophobia
+
+  # Story to Handle Claustrophobia Inquiry
+  - story: Claustrophobia_inquiry
+    steps:
+      - intent: claustrophobia
+      - action: utter_claustrophobia
+
+  # Story to Handle Acrophobia Inquiry
+  - story: Acrophobia_inquiry
+    steps:
+      - intent: acrophobia
+      - action: utter_acrophobia
+
+  # Story to Handle Social Phobia Inquiry
+  - story: Social_phobia_inquiry
+    steps:
+      - intent: social_phobia
+      - action: utter_social_phobia
+
+  - story: user provides feedback
+    steps:
+      - checkpoint: ask_feedback
+      - action: utter_ask_feedback
+      - intent: inform
+      - action: utter_thank_you
+      - action: utter_anything_else
+
+  - story: user doesn't have feedback
+    steps:
+      - checkpoint: ask_feedback
+      - action: utter_ask_feedback
+      - intent: deny
+      - action: utter_no_problem
+      - action: utter_anything_else
